@@ -6,13 +6,25 @@
     </head>
     <body>
         <header class="main-header-conteiner">
-            <div class="main-header container">
-                <a href="#">
-                    <h1><i class="fa-solid fa-utensils"></i>  Recipes <i class="fa-regular fa-lemon"></i> </h1>
-                </a>
-            </div>
+            {% include "recipes/partials/header.html" %}
         </header>
+        <div class="search-container">
+            <div class="container">
+                <form action="" class="search-form">
+                    <input type="text" class="search-input">
+                    <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <main class="main-content-container">
+            <div class="main-content container">
+                {% include "recipes/partials/recipe.html" %}
+            </div>
+        </main>
     </body>
+    <footer class="footer-container">
+        {% include "recipes/partials/footer.html" %}
+    </footer>
 </html>
 
 
