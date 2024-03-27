@@ -2,8 +2,11 @@
 
 from django.urls import path  # type: ignore[import-untyped]
 
-from recipes.views import home  # type: ignore[no-name-in-module]
+from recipes import views  # type: ignore[no-name-in-module]
+
+app_name = 'recipe'
 
 urlpatterns = [
-    path('', home),
+    path('', views.home, name='home'),
+    path('recipes/<int:id>/', views.recipe, name='recipe'),
 ]

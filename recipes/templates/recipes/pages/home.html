@@ -1,30 +1,10 @@
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        {% include "recipes/partials/head.html" %}
-    </head>
-    <body>
-        <header class="main-header-conteiner">
-            {% include "recipes/partials/header.html" %}
-        </header>
-        <div class="search-container">
-            <div class="container">
-                <form action="" class="search-form">
-                    <input type="text" class="search-input">
-                    <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
-                </form>
-            </div>
-        </div>
-        <main class="main-content-container">
-            <div class="main-content container">
-                {% include "recipes/partials/recipe.html" %}
-            </div>
-        </main>
-    </body>
-    <footer class="footer-container">
-        {% include "recipes/partials/footer.html" %}
-    </footer>
-</html>
+{% extends "global/base.html" %}
+{% block content %}
+<div class="main-content container">
+        {% include "recipes/partials/recipe.html" %}
+        {% include "recipes/partials/recipe.html" %}
+        {% include "recipes/partials/recipe.html" %}
+</div>
+{% endblock content %}
 
 
