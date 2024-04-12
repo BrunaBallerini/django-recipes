@@ -1,3 +1,4 @@
+# pylint: disable-msg=C0103
 '''Url's from my app recipes'''
 
 from django.urls import path  # type: ignore[import-untyped]
